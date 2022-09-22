@@ -4,6 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Encriptador de texto</title>
+        <link rel="icon" type="image/png" href="imagenes/laptop.png">
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink&family=Bungee+Spice&family=Roboto+Mono&display=swap" rel="stylesheet">
@@ -14,11 +15,29 @@
                 <a href="https://www.aluracursos.com/" >
                     <img src="imagenes/aluralogo.png" alt="logo de plataforma alura" class="logo-alura">
                 </a>
-                <h1>Encriptador</h1>
+                <div class="titulo">
+                    <h1>Encriptadorr<span>&nbsp;</span></h1>
+                </div>
             </div>
         </header>
         <main>
-            
+            <section class="entrada-mensaje">
+                <textarea class="texto-entrada" name="input" cols="40" rows="6"  placeholder="Ingrese su texto a ser encriptado o desencriptado aqui."></textarea>
+                <p>Solo se admiten letras sin acentos</p>
+                <div class="botones">
+                    <button class="boton-encriptar" onclick="botonEncriptar()">Encriptar</button>
+                    <button class="boton-desencriptar" onclick="botonDesencriptar()">Desencriptar</button>
+                </div>            
+            </section>
+    
+            <section class="salida-mensaje">
+                <div class="seccion-oculta">
+                    <img src="imagenes/Muñeco.png" alt="Background" class="imagen-salida">
+                    <h3 class="ingresar-texto">Ingrese el texto que quieres encriptar o desencriptar</h3>
+                </div>
+                <textarea name="output" cols="32" rows="8" placeholder="Ningún mensaje fue encontrado" class="texto-salida"></textarea>
+                <button class="copiar" onclick="copiar()">Copiar</button>
+            </section>
         </main>
     </body>
 

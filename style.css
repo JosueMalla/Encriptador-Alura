@@ -2,6 +2,8 @@ body{
     font-family: 'Roboto Mono', monospace;
 }
 
+/*Creacion del header*/
+
 header{
     background-color: #00AC8D;
 }
@@ -13,6 +15,12 @@ header{
 
 }
 
+.titulo{
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
 .logo-alura{
     width: 40px;
     margin: 15px;
@@ -20,8 +28,34 @@ header{
 
 h1{
     font-size: 35px;
-    position: absolute;
-    top: 20px;
-    right: 0;
+    position: relative;
     font-weight: bolder;
+    float: left;
+
+}
+
+h1 span{
+    position: absolute;
+    right: 0;
+    width: 0;
+    background-color: #00AC8D;
+    border-left: 1px solid #000;
+
+    animation: maquina 5s infinite alternate steps(12);
+}
+
+@keyframes maquina {
+    from{
+        width: 100%;
+    }
+    to{
+        width: 0;
+    }
+}
+
+/*CSS para el body*/
+
+main{
+    background: linear-gradient(to top left, rgb(0, 87, 163), rgb(0, 32, 60) );
+    height: 665px;
 }
