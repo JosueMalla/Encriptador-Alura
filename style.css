@@ -1,0 +1,27 @@
+body{
+    font-family: 'Roboto Mono', monospace;
+}
+
+header{
+    background-color: #00AC8D;
+}
+
+.encabezado{
+    margin: 0 auto;
+    position: relative;
+    width: 60%;
+
+}
+
+.logo-alura{
+    width: 40px;
+    margin: 15px;
+}
+
+h1{
+    font-size: 35px;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    font-weight: bolder;
+}
