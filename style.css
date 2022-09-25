@@ -101,6 +101,7 @@ main{
     height: 100%;
     display: inline-block;
     font-size: 17px;
+    cursor: pointer;
 }
 
 .botones{
@@ -120,6 +121,7 @@ main{
     height: 100%;
     display: inline-block;
     font-size: 17px;
+    cursor: pointer;
 }
 
 /*CSS Segundo bloque*/
@@ -158,6 +160,7 @@ main{
     border-radius: 15px;
     box-shadow: #000;
     margin-left: 40%;
+    cursor: pointer;
 }
 
 /*CSS Footer*/
@@ -170,30 +173,34 @@ footer{
 }
 
 .facebook{
-    width: 35px;
+    width: 20%;
     display: inline-block;
+    cursor: pointer;
 }
 
 .instagram{
-    width: 35px;
+    width: 20%;
     display: inline-block;
+    cursor: pointer;
 }
 
 .linkedin{
-    width: 35px;
+    width: 20%;
     display: inline-block;
+    cursor: pointer;
 }
 
 .github{
-    width: 35px;
+    width: 20%;
     display: inline-block;
+    cursor: pointer;
 }
 
 .social-logos{
-    width: 15%;
+    width: 10%;
     position: absolute;
     top: 15px;
-    right: 10px;
+    right: 5%;
 }
 
 footer > img{
@@ -203,4 +210,36 @@ footer > img{
 .copyrigth{
     color: wheat;
     font-size: 13px;
+}
+
+@media screen and (max-width: 480px){
+    .entrada-mensaje, .salida-mensaje{
+        display: block;
+        width: auto;
+    }
+    .botones{
+        height: auto;
+    }
+    main{
+        height: auto;
+    }
+    body, .encabezado{
+        width: auto;
+    }
+    .texto-entrada, .texto-salida{
+        width: 72%;
+    }
+    .botones{
+        height: 45px;
+        width: 300px;
+    }
+    .boton-desencriptar, .boton-encriptar{
+        width: 45%;
+    }
+    .copiar{
+        height: 40px;
+    }
+    header{
+        width: auto;
+    }
 }
