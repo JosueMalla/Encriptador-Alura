@@ -172,32 +172,33 @@ footer{
     text-align: center;
 }
 
-.facebook{
-    width: 20%;
+.insign{
+    width: 22%;
     display: inline-block;
     cursor: pointer;
+    vertical-align: top;
 }
 
 .instagram{
-    width: 20%;
+    width: 18%;
     display: inline-block;
     cursor: pointer;
 }
 
 .linkedin{
-    width: 20%;
+    width: 18%;
     display: inline-block;
     cursor: pointer;
 }
 
 .github{
-    width: 20%;
+    width: 18%;
     display: inline-block;
     cursor: pointer;
 }
 
 .social-logos{
-    width: 10%;
+    width: 12%;
     position: absolute;
     top: 15px;
     right: 5%;
